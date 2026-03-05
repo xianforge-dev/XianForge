@@ -1,0 +1,12 @@
+1:"$Sreact.fragment"
+2:I[68500,["85","static/chunks/85-62dcf4f36ee000ac.js","101","static/chunks/101-599aaf125626e47f.js","825","static/chunks/825-aab4f92e292ffd4c.js","122","static/chunks/122-21ae42fe3a21259c.js","974","static/chunks/app/page-dfd22d2d1be13731.js"],"default"]
+3:I[89794,["85","static/chunks/85-62dcf4f36ee000ac.js","101","static/chunks/101-599aaf125626e47f.js","825","static/chunks/825-aab4f92e292ffd4c.js","122","static/chunks/122-21ae42fe3a21259c.js","974","static/chunks/app/page-dfd22d2d1be13731.js"],"default"]
+4:I[25837,["85","static/chunks/85-62dcf4f36ee000ac.js","101","static/chunks/101-599aaf125626e47f.js","825","static/chunks/825-aab4f92e292ffd4c.js","122","static/chunks/122-21ae42fe3a21259c.js","974","static/chunks/app/page-dfd22d2d1be13731.js"],"default"]
+5:I[30551,["85","static/chunks/85-62dcf4f36ee000ac.js","101","static/chunks/101-599aaf125626e47f.js","825","static/chunks/825-aab4f92e292ffd4c.js","122","static/chunks/122-21ae42fe3a21259c.js","974","static/chunks/app/page-dfd22d2d1be13731.js"],"default"]
+6:I[21509,["85","static/chunks/85-62dcf4f36ee000ac.js","101","static/chunks/101-599aaf125626e47f.js","825","static/chunks/825-aab4f92e292ffd4c.js","122","static/chunks/122-21ae42fe3a21259c.js","974","static/chunks/app/page-dfd22d2d1be13731.js"],"default"]
+7:I[29476,["85","static/chunks/85-62dcf4f36ee000ac.js","101","static/chunks/101-599aaf125626e47f.js","825","static/chunks/825-aab4f92e292ffd4c.js","122","static/chunks/122-21ae42fe3a21259c.js","974","static/chunks/app/page-dfd22d2d1be13731.js"],"default"]
+8:I[77783,["85","static/chunks/85-62dcf4f36ee000ac.js","101","static/chunks/101-599aaf125626e47f.js","825","static/chunks/825-aab4f92e292ffd4c.js","122","static/chunks/122-21ae42fe3a21259c.js","974","static/chunks/app/page-dfd22d2d1be13731.js"],"default"]
+9:I[90484,[],"OutletBoundary"]
+a:"$Sreact.suspense"
+0:{"buildId":"3XCsYwuFbksu6CvbvLexB","rsc":["$","$1","c",{"children":[["$","main",null,{"className":"min-h-screen bg-background selection:bg-gold-500/30 overflow-x-hidden","children":[["$","$L2",null,{}],["$","$L3",null,{}],["$","$L4",null,{}],["$","$L5",null,{}],["$","$L6",null,{}],["$","$L7",null,{}],["$","$L8",null,{}]]}],null,["$","$L9",null,{"children":["$","$a",null,{"name":"Next.MetadataOutlet","children":"$@b"}]}]]}],"loading":null,"isPartial":false}
+b:null

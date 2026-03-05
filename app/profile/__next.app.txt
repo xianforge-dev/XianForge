@@ -1,0 +1,8 @@
+1:"$Sreact.fragment"
+2:I[78616,[],"ClientSegmentRoot"]
+3:I[37743,["956","static/chunks/3a91511d-bbeb8ada805826ea.js","85","static/chunks/85-62dcf4f36ee000ac.js","958","static/chunks/958-a1783dfefe54cbd5.js","101","static/chunks/101-599aaf125626e47f.js","825","static/chunks/825-aab4f92e292ffd4c.js","572","static/chunks/572-90ca4dec7211dd48.js","253","static/chunks/app/app/layout-ff08b6c1b7c6db3e.js"],"default"]
+4:I[57121,[],""]
+5:I[74581,[],""]
+:HL["/_next/static/css/b9b8e622f4c4d397.css","style"]
+0:{"buildId":"3XCsYwuFbksu6CvbvLexB","rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/b9b8e622f4c4d397.css","precedence":"next"}]],["$","$L2",null,{"Component":"$3","slots":{"children":["$","$L4",null,{"parallelRouterKey":"children","template":["$","$L5",null,{}]}]},"serverProvidedParams":{"params":{},"promises":["$@6"]}}]]}],"loading":null,"isPartial":false}
+6:"$0:rsc:props:children:1:props:serverProvidedParams:params"
