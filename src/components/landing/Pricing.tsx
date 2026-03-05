@@ -43,13 +43,13 @@ export default function Pricing() {
     const [hoveredTier, setHoveredTier] = useState<number | null>(null);
 
     return (
-        <section id="pricing" className="py-40 relative bg-[#0c0c0e] overflow-hidden border-b border-white/5">
+        <section id="pricing" className="py-20 relative bg-[#0c0c0e] overflow-hidden border-b border-white/5">
             {/* Artisanal Background Grain & Noise */}
             <div className="absolute inset-0 pointer-events-none opacity-[0.03] bg-[url('https://grainy-gradients.vercel.app/noise.svg')] z-0" />
             <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-gold-500/10 to-transparent" />
             <div className="absolute -right-40 top-1/4 w-[500px] h-[500px] bg-gold-500/[0.02] blur-[150px] rounded-full pointer-events-none animate-wobble" />
 
-            <div className="max-w-[1440px] mx-auto px-6 sm:px-10 md:px-16 lg:px-20 relative z-10 flex flex-col gap-16 md:gap-24">
+            <div className="max-w-[1440px] mx-auto px-6 sm:px-10 md:px-16 lg:px-20 relative z-10 flex flex-col gap-10 md:gap-16">
                 <div className="flex flex-col items-center text-center gap-6 md:gap-10 max-w-4xl mx-auto">
                     <motion.div
                         initial={{ opacity: 0, y: -10 }}
@@ -64,9 +64,9 @@ export default function Pricing() {
                     <motion.h2
                         initial={{ opacity: 0, scale: 0.95 }}
                         whileInView={{ opacity: 1, scale: 1 }}
-                        className="text-4xl sm:text-5xl md:text-8xl font-display tracking-widest text-glow-gold uppercase leading-[1.1] drop-shadow-2xl"
+                        className="text-4xl sm:text-5xl md:text-7xl font-display tracking-widest text-glow-gold uppercase leading-[1.1] drop-shadow-2xl"
                     >
-                        Tiers of <br /> <span className="font-serif italic text-white/95 lowercase tracking-tight">Cultivation <span className="text-xl md:text-3xl opacity-20">(修仙等级)</span></span>
+                        Tiers of <br /> <span className="font-serif italic text-white/95 lowercase tracking-tight">Cultivation <span className="text-xl md:text-2xl opacity-20">(修仙等级)</span></span>
                     </motion.h2>
 
                     <p className="text-white/60 max-w-xl font-serif text-lg md:text-xl italic leading-relaxed border-l-2 border-gold-500/20 pl-6 md:pl-10 -rotate-1 origin-left border-b border-gold-500/5 pb-8 px-4">
@@ -92,7 +92,7 @@ export default function Pricing() {
                                 transition={{ delay: index * 0.1, duration: 1, ease: [0.16, 1, 0.3, 1] }}
                                 whileHover={{ y: lifts[index] - 20, scale: 1.03, rotate: 0, zIndex: 10 }}
                                 className={cn(
-                                    "glass-beveled organic-radius p-8 md:p-12 flex flex-col items-center text-center group transition-all duration-700 min-h-[550px] md:min-h-[600px] justify-between border relative cursor-pointer active:scale-95 shadow-[0_60px_100px_-20px_rgba(0,0,0,1)]",
+                                    "glass-beveled organic-radius p-8 md:p-10 flex flex-col items-center text-center group transition-all duration-700 min-h-[500px] md:min-h-[550px] justify-between border relative cursor-pointer active:scale-95 shadow-[0_60px_100px_-20px_rgba(0,0,0,1)]",
                                     tier.popular ? 'border-gold-500/30' : 'border-white/5'
                                 )}
                             >

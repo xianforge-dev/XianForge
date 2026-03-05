@@ -60,7 +60,7 @@ export default function Hero() {
     return (
         <section
             ref={containerRef}
-            className="relative min-h-[90vh] lg:h-screen flex items-center justify-center overflow-hidden pt-20 md:pt-24 pb-8"
+            className="relative min-h-[85vh] lg:h-[90vh] flex items-center justify-center overflow-hidden pt-16 md:pt-20 pb-4"
         >
             {mounted && (
                 <>
@@ -106,11 +106,11 @@ export default function Hero() {
                                     initial={{ opacity: 0, scale: 0.98 }}
                                     animate={{ opacity: 1, scale: 1 }}
                                     transition={{ duration: 1, delay: 0.2 }}
-                                    className="text-4xl md:text-6xl font-display leading-[1.05] text-glow-gold tracking-tight"
+                                    className="text-3xl md:text-5xl lg:text-6xl font-display leading-[1.05] text-glow-gold tracking-tight"
                                 >
                                     Forge any <br />
-                                    <span className="text-white drop-shadow-[0_0_40px_rgba(255,215,0,0.15)] italic font-serif">Scripture</span> <span className="text-white/10 lowercase tracking-normal text-xl whitespace-nowrap">(经文)</span> <br />
-                                    into <span className="text-gold-500 text-glow-gold drop-shadow-2xl">Manhua</span> <span className="text-gold-500/20 lowercase tracking-normal text-xl whitespace-nowrap">(漫画)</span>
+                                    <span className="text-white drop-shadow-[0_0_40px_rgba(255,215,0,0.15)] italic font-serif">Scripture</span> <span className="text-white/10 lowercase tracking-normal text-lg whitespace-nowrap">(经文)</span> <br />
+                                    into <span className="text-gold-500 text-glow-gold drop-shadow-2xl">Manhua</span> <span className="text-gold-500/20 lowercase tracking-normal text-lg whitespace-nowrap">(漫画)</span>
                                 </motion.h1>
                             </div>
 
@@ -127,16 +127,16 @@ export default function Hero() {
                                 initial={{ opacity: 0, y: 30 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 1.2, delay: 0.8 }}
-                                className="flex flex-wrap items-center gap-8 mt-4 ml-6"
+                                className="flex flex-wrap items-center gap-6 mt-2 ml-6"
                             >
                                 <button
                                     onMouseEnter={() => setIsHovered(true)}
                                     onMouseLeave={() => setIsHovered(false)}
                                     onClick={() => document.getElementById('demo')?.scrollIntoView({ behavior: 'smooth' })}
-                                    className="relative group px-10 py-5 bg-gold-500 text-black font-black tracking-[0.5em] uppercase molten-edge transition-all duration-700 rounded-sm text-[10px] shadow-[0_30px_60px_-10px_rgba(255,215,0,0.3)] hover:scale-105 active:scale-95"
+                                    className="relative group px-8 py-4 bg-gold-500 text-black font-black tracking-[0.5em] uppercase molten-edge transition-all duration-700 rounded-sm text-[9px] shadow-[0_20px_40px_-10px_rgba(255,215,0,0.3)] hover:scale-105 active:scale-95"
                                 >
-                                    <div className="relative z-10 flex items-center gap-4">
-                                        IGNITE THE FORGE <span className="opacity-40 italic lowercase font-normal hidden sm:inline-block">(开启锻造)</span> <Flame className="w-4 h-4 animate-pulse" />
+                                    <div className="relative z-10 flex items-center gap-3">
+                                        IGNITE THE FORGE <span className="opacity-40 italic lowercase font-normal hidden sm:inline-block">(开启锻造)</span> <Flame className="w-3.5 h-3.5 animate-pulse" />
                                     </div>
 
                                     {/* Organic Ink Splash on Hover */}
@@ -155,9 +155,9 @@ export default function Hero() {
 
                                 <a
                                     href="#showcase"
-                                    className="flex items-center gap-4 px-8 py-5 glass-beveled border-white/5 text-white font-black tracking-[0.4em] hover:bg-white/10 transition-all uppercase text-[8px] group rounded-sm active:scale-95"
+                                    className="flex items-center gap-4 px-6 py-4 glass-beveled border-white/5 text-white font-black tracking-[0.4em] hover:bg-white/10 transition-all uppercase text-[8px] group rounded-sm active:scale-95"
                                 >
-                                    CULTIVATOR ARCHIVE <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-2 transition-transform" />
+                                    CULTIVATOR ARCHIVE <ArrowRight className="w-3 h-3 group-hover:translate-x-2 transition-transform" />
                                 </a>
 
                                 {/* Orynth Featured Badge */}
@@ -168,7 +168,7 @@ export default function Hero() {
                                     className="w-full sm:w-auto flex justify-center sm:justify-start mt-6 lg:mt-0"
                                 >
                                     <a href="https://orynth.dev/projects/xianforge" target="_blank" rel="noopener" className="hover:scale-105 transition-transform active:scale-95 grayscale-[0.5] hover:grayscale-0 opacity-60 hover:opacity-100">
-                                        <img src="https://orynth.dev/api/badge/xianforge?theme=dark&style=default" alt="Featured on Orynth" width="160" height="50" />
+                                        <img src="https://orynth.dev/api/badge/xianforge?theme=dark&style=default" alt="Featured on Orynth" width="140" height="44" />
                                     </a>
                                 </motion.div>
                             </motion.div>
@@ -180,7 +180,7 @@ export default function Hero() {
                             animate={{ opacity: 1, scale: 0.9, rotate: 2 }}
                             transition={{ duration: 1.5, delay: 0.3 }}
                             whileHover={{ rotate: 1, scale: 0.92 }}
-                            className="relative aspect-[9/15] w-full max-w-[240px] mx-auto group lg:ml-12"
+                            className="relative aspect-[9/14] w-full max-w-[220px] mx-auto group lg:ml-8"
                         >
                             {/* Divine Ornamental Frame - Asymmetric */}
                             <div className="absolute -inset-8 border-l-[1px] border-r-[1px] border-gold-500/10 rounded-full opacity-30 pointer-events-none scale-x-[1.1] rotate-[-5deg]" />

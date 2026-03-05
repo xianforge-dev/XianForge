@@ -14,13 +14,13 @@ export default function Footer() {
     ];
 
     return (
-        <footer className="py-24 relative bg-background overflow-hidden border-t border-gold-500/10 backdrop-blur-3xl font-sans">
+        <footer className="py-16 md:py-20 relative bg-background overflow-hidden border-t border-gold-500/10 backdrop-blur-3xl font-sans">
             {/* Artisanal Background Grain & Noise */}
             <div className="absolute inset-0 pointer-events-none opacity-[0.03] bg-[url('https://grainy-gradients.vercel.app/noise.svg')] z-0" />
             <div className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-crimson-600/40 to-transparent shadow-[0_0_20px_rgba(220,20,60,0.3)]" />
             <div className="absolute top-1/2 left-1/4 w-[600px] h-[600px] bg-gold-500/[0.02] blur-[150px] rounded-full pointer-events-none animate-wobble" />
 
-            <div className="max-w-[1440px] mx-auto px-6 sm:px-10 md:px-16 relative z-10 flex flex-col items-center gap-12 md:gap-20">
+            <div className="max-w-[1440px] mx-auto px-6 sm:px-10 md:px-16 relative z-10 flex flex-col items-center gap-10 md:gap-16">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 sm:gap-16 mb-12 sm:mb-20 w-full text-center lg:text-left">
 
                     {/* Brand - High Depth Artisanal */}

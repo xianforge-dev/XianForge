@@ -70,16 +70,16 @@ export default function Showcase() {
     const [isHovered, setIsHovered] = useState(false);
 
     return (
-        <section id="showcase" className="py-40 relative bg-[#0c0c0e] overflow-hidden border-b border-white/5">
+        <section id="showcase" className="py-20 relative bg-[#0c0c0e] overflow-hidden border-b border-white/5">
             {/* Artisanal Background Grain & Noise */}
             <div className="absolute inset-0 pointer-events-none opacity-[0.03] bg-[url('https://grainy-gradients.vercel.app/noise.svg')] z-0" />
 
             {/* Background Decorative Text - DAO (道) - Hand-drawn feel */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[40rem] font-display text-white/[0.01] select-none pointer-events-none tracking-tighter leading-none -rotate-12 italic">
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[20rem] md:text-[30rem] font-display text-white/[0.01] select-none pointer-events-none tracking-tighter leading-none -rotate-12 italic">
                 Manifest
             </div>
 
-            <div className="max-w-[1440px] mx-auto px-6 sm:px-10 md:px-16 lg:px-20 relative z-10 flex flex-col gap-16 md:gap-24">
+            <div className="max-w-[1440px] mx-auto px-6 sm:px-10 md:px-16 lg:px-20 relative z-10 flex flex-col gap-10 md:gap-16">
                 <div className="flex flex-col items-center text-center gap-6 md:gap-8 max-w-4xl mx-auto">
                     <motion.div
                         initial={{ opacity: 0, scale: 0.8 }}
@@ -95,9 +95,9 @@ export default function Showcase() {
                         initial={{ opacity: 0, scale: 0.95 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 1 }}
-                        className="text-4xl sm:text-5xl md:text-8xl font-display tracking-widest text-glow-gold uppercase leading-[1.1] drop-shadow-2xl"
+                        className="text-4xl sm:text-5xl md:text-7xl font-display tracking-widest text-glow-gold uppercase leading-[1.1] drop-shadow-2xl"
                     >
-                        Divine <span className="font-serif italic text-white/95 lowercase tracking-tight">Records <span className="text-xl md:text-3xl opacity-20">(神圣记录)</span></span>
+                        Divine <span className="font-serif italic text-white/95 lowercase tracking-tight">Records <span className="text-xl md:text-2xl opacity-20">(神圣记录)</span></span>
                     </motion.h2>
 
                     <p className="text-white/60 max-w-xl font-serif text-lg md:text-xl italic leading-relaxed border-l-2 border-gold-500/20 pl-6 md:pl-10 -rotate-1 origin-left border-b border-gold-500/5 pb-6 px-4">

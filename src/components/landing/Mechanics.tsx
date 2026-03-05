@@ -41,13 +41,13 @@ const mechanics = [
 
 export default function Mechanics() {
     return (
-        <section id="mechanics" className="py-40 relative bg-[#0c0c0e] overflow-hidden border-b border-white/5">
+        <section id="mechanics" className="py-20 relative bg-[#0c0c0e] overflow-hidden border-b border-white/5">
             {/* Artisanal Background Elements */}
             <div className="absolute inset-0 pointer-events-none opacity-[0.03] bg-[url('https://grainy-gradients.vercel.app/noise.svg')] z-0" />
             <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-gold-500/20 to-transparent" />
             <div className="absolute -left-40 top-1/3 w-[500px] h-[500px] bg-crimson-500/[0.02] blur-[150px] rounded-full pointer-events-none animate-wobble" />
 
-            <div className="max-w-[1440px] mx-auto px-6 sm:px-10 md:px-16 lg:px-20 relative z-10 flex flex-col gap-16 md:gap-24">
+            <div className="max-w-[1440px] mx-auto px-6 sm:px-10 md:px-16 lg:px-20 relative z-10 flex flex-col gap-10 md:gap-16">
                 <div className="flex flex-col items-center text-center gap-6 md:gap-10 max-w-4xl mx-auto">
                     <motion.div
                         initial={{ opacity: 0, y: -10 }}
@@ -62,9 +62,9 @@ export default function Mechanics() {
                     <motion.h2
                         initial={{ opacity: 0, scale: 0.95 }}
                         whileInView={{ opacity: 1, scale: 1 }}
-                        className="text-4xl sm:text-5xl md:text-8xl font-display tracking-widest text-gold-500 uppercase leading-[1.1] drop-shadow-2xl"
+                        className="text-4xl sm:text-5xl md:text-7xl font-display tracking-widest text-gold-500 uppercase leading-[1.1] drop-shadow-2xl"
                     >
-                        The Path of <br /> <span className="font-serif italic text-white/95 lowercase tracking-tight">Manifestation <span className="text-xl md:text-3xl opacity-20">(体现之道)</span></span>
+                        The Path of <br /> <span className="font-serif italic text-white/95 lowercase tracking-tight">Manifestation <span className="text-xl md:text-2xl opacity-20">(体现之道)</span></span>
                     </motion.h2>
 
                     <p className="text-white/60 max-w-xl font-serif text-lg md:text-xl italic leading-relaxed border-l-2 border-gold-500/20 pl-6 md:pl-10 -rotate-1 origin-left border-b border-gold-500/5 pb-6 px-4">
@@ -85,7 +85,7 @@ export default function Mechanics() {
                                 whileInView={{ opacity: 1, y: 0, rotate: rotations[index % 4] }}
                                 transition={{ duration: 1, delay: index * 0.1, ease: [0.16, 1, 0.3, 1] }}
                                 whileHover={{ y: -15, scale: 1.03, rotate: 0 }}
-                                className="glass-beveled organic-radius group p-8 md:p-10 flex flex-col items-center text-center rounded-sm transition-all duration-700 hover:bg-gold-500/[0.04] overflow-hidden relative shadow-[0_45px_100px_-20px_rgba(0,0,0,0.8)] min-h-[460px] justify-between border border-white/5 active:scale-95 cursor-pointer"
+                                className="glass-beveled organic-radius group p-8 md:p-10 flex flex-col items-center text-center rounded-sm transition-all duration-700 hover:bg-gold-500/[0.04] overflow-hidden relative shadow-[0_45px_100px_-20px_rgba(0,0,0,0.8)] min-h-[400px] justify-between border border-white/5 active:scale-95 cursor-pointer"
                             >
                                 {/* Artisanal Flourishes */}
                                 <div className="absolute top-0 right-0 p-5 opacity-[0.05] group-hover:opacity-30 transition-opacity">

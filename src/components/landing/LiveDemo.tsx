@@ -50,13 +50,13 @@ export default function LiveDemo() {
     if (!mounted) return null;
 
     return (
-        <section id="demo" className="py-40 relative overflow-hidden bg-[#0c0c0e]">
+        <section id="demo" className="py-20 relative overflow-hidden bg-[#0c0c0e]">
             {/* Artisanal Background Grain & Noise */}
             <div className="absolute inset-0 pointer-events-none opacity-[0.03] bg-[url('https://grainy-gradients.vercel.app/noise.svg')] z-0" />
             <div className="absolute top-0 right-0 w-1/2 h-full bg-gold-500/[0.04] blur-[150px] pointer-events-none animate-wobble" />
             <div className="absolute bottom-0 left-0 w-1/2 h-full bg-crimson-500/[0.03] blur-[150px] pointer-events-none animate-pulse-slow" />
 
-            <div className="max-w-[1440px] mx-auto px-6 sm:px-10 md:px-16 lg:px-20 relative z-10 flex flex-col gap-16 md:gap-24">
+            <div className="max-w-[1440px] mx-auto px-6 sm:px-10 md:px-16 lg:px-20 relative z-10 flex flex-col gap-10 md:gap-16">
                 <div className="flex flex-col items-center text-center gap-6 md:gap-10 max-w-4xl mx-auto">
                     <motion.div
                         initial={{ opacity: 0, y: -10 }}
@@ -71,9 +71,9 @@ export default function LiveDemo() {
                     <motion.h2
                         initial={{ opacity: 0, scale: 0.95 }}
                         whileInView={{ opacity: 1, scale: 1 }}
-                        className="text-4xl sm:text-5xl md:text-8xl font-display tracking-widest text-gold-500 uppercase md:leading-[1.05] drop-shadow-2xl"
+                        className="text-4xl sm:text-5xl md:text-7xl font-display tracking-widest text-gold-500 uppercase md:leading-[1.05] drop-shadow-2xl"
                     >
-                        Enter the <br /> <span className="font-serif italic text-white/95 lowercase tracking-tight">Divine Forge <span className="text-xl md:text-3xl opacity-20">(神圣熔炉)</span></span>
+                        Enter the <br /> <span className="font-serif italic text-white/95 lowercase tracking-tight">Divine Forge <span className="text-xl md:text-2xl opacity-20">(神圣熔炉)</span></span>
                     </motion.h2>
 
                     <p className="text-white/60 max-w-xl font-serif text-lg md:text-xl italic leading-relaxed border-b border-gold-500/20 pb-8 text-center -rotate-1 px-4">
@@ -83,14 +83,14 @@ export default function LiveDemo() {
                     </p>
                 </div>
 
-                <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-20 items-stretch min-h-[600px] md:min-h-[700px]">
+                <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-stretch min-h-[500px] md:min-h-[600px]">
 
                     {/* Input Area - Artisanal Bevels */}
                     <motion.div
                         initial={{ opacity: 0, x: -40, rotate: -0.5 }}
                         whileInView={{ opacity: 1, x: 0, rotate: -0.5 }}
                         whileHover={{ rotate: 0 }}
-                        className="glass-gold-premium p-6 md:p-12 rounded-sm border-gold-500/15 shadow-[0_60px_120px_-20px_rgba(0,0,0,1)] relative overflow-hidden flex flex-col justify-between h-full bg-[#111113]/80 group transition-all duration-700 organic-radius"
+                        className="glass-gold-premium p-6 md:p-10 rounded-sm border-gold-500/15 shadow-[0_60px_120px_-20px_rgba(0,0,0,1)] relative overflow-hidden flex flex-col justify-between h-full bg-[#111113]/80 group transition-all duration-700 organic-radius"
                     >
                         <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-gold-500/30 to-transparent" />
 
@@ -111,7 +111,7 @@ export default function LiveDemo() {
                                 value={inputText}
                                 onChange={(e) => setInputText(e.target.value)}
                                 placeholder="Paste xianxia chapter, wuxia battle, or cultivation moment here... The spirits are listening. (请粘贴您的仙侠章节…)"
-                                className="w-full flex-grow bg-black/60 border border-white/5 rounded-sm p-6 md:p-10 text-white/80 font-serif font-light text-xl md:text-2xl focus:outline-none focus:border-gold-500/20 transition-all custom-scrollbar resize-none placeholder:text-white/5 leading-relaxed shadow-inner italic"
+                                className="w-full flex-grow bg-black/60 border border-white/5 rounded-sm p-6 md:p-8 text-white/80 font-serif font-light text-xl md:text-2xl focus:outline-none focus:border-gold-500/20 transition-all custom-scrollbar resize-none placeholder:text-white/5 leading-relaxed shadow-inner italic"
                             />
                         </div>
 
@@ -169,7 +169,7 @@ export default function LiveDemo() {
                     </motion.div>
 
                     {/* Result Preview Area - Asymmetrical Frames */}
-                    <div className="relative aspect-[9/16] w-full max-w-[500px] mx-auto lg:mx-0 min-h-[500px] md:min-h-[700px] perspective-1000 lg:rotate-1 hover:rotate-0 transition-transform duration-700">
+                    <div className="relative aspect-[9/16] w-full max-w-[480px] mx-auto lg:mx-0 min-h-[450px] md:min-h-[600px] perspective-1000 lg:rotate-1 hover:rotate-0 transition-transform duration-700">
 
                         <AnimatePresence mode="wait">
                             {!showResult && !isForging ? (
