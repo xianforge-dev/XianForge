@@ -60,7 +60,7 @@ export default function Hero() {
     return (
         <section
             ref={containerRef}
-            className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 md:pt-40 pb-20"
+            className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 md:pt-28 pb-10"
         >
             {mounted && (
                 <>
@@ -81,7 +81,7 @@ export default function Hero() {
                     <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-background via-background/40 to-transparent z-10" />
                     <div className="absolute inset-x-0 bottom-0 h-[40vh] bg-gradient-to-t from-background via-background/90 to-transparent z-20" />
 
-                    <div className="max-w-[1440px] mx-auto px-6 sm:px-10 md:px-16 lg:px-20 relative z-30 flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+                    <div className="w-full max-w-full mx-auto px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 relative z-30 flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
 
                         {/* Left Side: Asymmetrical Typographic Block */}
                         <motion.div
@@ -106,11 +106,11 @@ export default function Hero() {
                                     initial={{ opacity: 0, scale: 0.98 }}
                                     animate={{ opacity: 1, scale: 1 }}
                                     transition={{ duration: 1, delay: 0.2 }}
-                                    className="text-6xl md:text-8xl font-display leading-[1.05] text-glow-gold tracking-tight"
+                                    className="text-5xl md:text-7xl font-display leading-[1.05] text-glow-gold tracking-tight"
                                 >
                                     Forge any <br />
-                                    <span className="text-white drop-shadow-[0_0_40px_rgba(255,215,0,0.15)] italic font-serif">Scripture</span> <span className="text-white/10 lowercase tracking-normal text-3xl">(经文)</span> <br />
-                                    into <span className="text-gold-500 text-glow-gold drop-shadow-2xl">Manhua</span> <span className="text-gold-500/20 lowercase tracking-normal text-3xl">(漫画)</span>
+                                    <span className="text-white drop-shadow-[0_0_40px_rgba(255,215,0,0.15)] italic font-serif">Scripture</span> <span className="text-white/10 lowercase tracking-normal text-2xl">(经文)</span> <br />
+                                    into <span className="text-gold-500 text-glow-gold drop-shadow-2xl">Manhua</span> <span className="text-gold-500/20 lowercase tracking-normal text-2xl">(漫画)</span>
                                 </motion.h1>
                             </div>
 
@@ -118,9 +118,9 @@ export default function Hero() {
                                 initial={{ opacity: 0, y: 15 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 1, delay: 0.5 }}
-                                className="text-xl md:text-2xl text-white/60 max-w-lg leading-relaxed font-serif italic border-l-[3px] border-gold-500/20 pl-10 border-b border-gold-500/10 pb-10 -rotate-1 origin-left"
+                                className="text-lg md:text-xl text-white/60 max-w-lg leading-relaxed font-serif italic border-l-[3px] border-gold-500/20 pl-8 border-b border-gold-500/10 pb-6 -rotate-1 origin-left"
                             >
-                                "Breathe life into ancient characters. Manifest divine intent through vertical scrolls, optimized for the Bilibili platform." <span className="opacity-20 lowercase tracking-tight block mt-2">(通过垂直滚动条表现神圣意图。)</span>
+                                "Breathe life into ancient characters. Manifest divine intent through vertical scrolls, optimized for the Bilibili platform." <span className="opacity-20 lowercase tracking-tight block mt-1">(通过垂直滚动条表现神圣意图。)</span>
                             </motion.p>
 
                             <motion.div
@@ -168,7 +168,7 @@ export default function Hero() {
                                     className="w-full sm:w-auto flex justify-center sm:justify-start mt-6 lg:mt-0"
                                 >
                                     <a href="https://orynth.dev/projects/xianforge" target="_blank" rel="noopener" className="hover:scale-105 transition-transform active:scale-95 grayscale-[0.5] hover:grayscale-0 opacity-60 hover:opacity-100">
-                                        <img src="https://orynth.dev/api/badge/xianforge?theme=dark&style=default" alt="Featured on Orynth" width="220" height="68" />
+                                        <img src="https://orynth.dev/api/badge/xianforge?theme=dark&style=default" alt="Featured on Orynth" width="180" height="56" />
                                     </a>
                                 </motion.div>
                             </motion.div>
@@ -180,7 +180,7 @@ export default function Hero() {
                             animate={{ opacity: 1, scale: 0.9, rotate: 2 }}
                             transition={{ duration: 1.5, delay: 0.3 }}
                             whileHover={{ rotate: 1, scale: 0.92 }}
-                            className="relative aspect-[9/15] w-full max-w-[340px] mx-auto group lg:ml-20"
+                            className="relative aspect-[9/15] w-full max-w-[280px] mx-auto group lg:ml-20"
                         >
                             {/* Divine Ornamental Frame - Asymmetric */}
                             <div className="absolute -inset-8 border-l-[1px] border-r-[1px] border-gold-500/10 rounded-full opacity-30 pointer-events-none scale-x-[1.1] rotate-[-5deg]" />
