@@ -1,11 +1,18 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { Twitter, Disc as Discord, Github, Flame, Wind, Zap } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Logo from "../ui/Logo";
 
 export default function Footer() {
+    const socialLinks = [
+        { Icon: Twitter, href: "https://x.com/xianforge" },
+        { Icon: Discord, href: "https://discord.gg/xianforge" }, // Placeholder
+        { Icon: Github, href: "https://github.com/xianforge-dev/XianForge" },
+    ];
+
     return (
         <footer className="py-24 relative bg-background overflow-hidden border-t border-gold-500/10 backdrop-blur-3xl font-sans">
             {/* Artisanal Background Grain & Noise */}
@@ -27,8 +34,16 @@ export default function Footer() {
                         </p>
 
                         <div className="flex items-center gap-6 md:gap-8 justify-center lg:justify-start mt-4">
-                            {[Twitter, Discord, Github].map((Icon, i) => (
-                                <Icon key={i} className="w-5 md:w-6 h-5 md:h-6 text-white/20 hover:text-gold-500 cursor-pointer transition-all hover:scale-125 hover:rotate-6 active:scale-90" strokeWidth={1.5} />
+                            {socialLinks.map(({ Icon, href }, i) => (
+                                <Link
+                                    key={i}
+                                    href={href}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-white/20 hover:text-gold-500 transition-all hover:scale-125 hover:rotate-6 active:scale-90"
+                                >
+                                    <Icon className="w-5 md:w-6 h-5 md:h-6" strokeWidth={1.5} />
+                                </Link>
                             ))}
                         </div>
                     </div>
