@@ -79,7 +79,7 @@ export default function Showcase() {
                 Manifest
             </div>
 
-            <div className="container mx-auto px-6 sm:px-10 md:px-20 relative z-10 flex flex-col gap-16 md:gap-24">
+            <div className="max-w-[1440px] mx-auto px-6 sm:px-10 md:px-16 lg:px-20 relative z-10 flex flex-col gap-16 md:gap-24">
                 <div className="flex flex-col items-center text-center gap-6 md:gap-8 max-w-4xl mx-auto">
                     <motion.div
                         initial={{ opacity: 0, scale: 0.8 }}
@@ -107,7 +107,7 @@ export default function Showcase() {
                 </div>
 
                 {/* Hand-Crafted Masonry Grid - Asymmetrical */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 max-w-7xl mx-auto w-full">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 w-full">
                     {examples.map((item, index) => {
                         const rotations = [-1.5, 1, -0.5, 1.5];
                         const offsets = [0, 15, -8, 30];

@@ -14,11 +14,11 @@ import {
     Layout,
     BookOpen,
     Trophy,
-    Activity
+    Activity,
+    Twitter
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-import { ThemeToggle } from "./ThemeToggle";
 import Logo from "../ui/Logo";
 
 const navLinks = [
@@ -51,15 +51,18 @@ export default function Header() {
             className={cn(
                 "fixed top-0 left-0 right-0 z-[100] transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] overflow-visible",
                 isScrolled
-                    ? "bg-black/98 dark:bg-black/80 backdrop-blur-3xl py-4 md:py-5 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.8)] border-b border-gold-500/10"
-                    : "bg-transparent py-6 md:py-8 border-b border-transparent"
+                    ? "bg-black/80 backdrop-blur-3xl py-4 md:py-5 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.8)] border-b border-gold-500/10"
+                    : "bg-transparent py-7 md:py-10 border-b border-transparent"
             )}
         >
-            <nav className="max-w-7xl mx-auto flex items-center justify-between px-6 sm:px-10 lg:px-12">
+            <nav className="max-w-[1440px] mx-auto flex items-center justify-between px-6 sm:px-10 lg:px-16">
                 {/* Custom Logo - Responsive & Animated */}
-                <Link href="/" className="group relative z-[110] transition-transform duration-700 hover:scale-105">
-                    <div className="flex items-center gap-4">
-                        <Logo size="sm" showText={false} />
+                <Link href="/" className="group relative z-[110] transition-all duration-700 hover:scale-105 active:scale-95">
+                    <div className="flex items-center gap-5">
+                        <div className="relative">
+                            <Logo size="sm" showText={false} />
+                            <div className="absolute inset-0 bg-gold-500/20 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                        </div>
                         <div className="flex flex-col -gap-1">
                             <span className="text-xl md:text-2xl font-display tracking-[0.2em] bg-gradient-to-r from-gold-500 via-crimson-400 to-gold-600 bg-clip-text text-transparent uppercase italic leading-none drop-shadow-sm">
                                 XianForge
@@ -120,7 +123,14 @@ export default function Header() {
                     <div className="h-8 w-[1px] bg-gradient-to-b from-transparent via-white/10 to-transparent mx-2" />
 
                     <div className="flex items-center gap-4 xl:gap-6">
-                        <ThemeToggle />
+                        <Link
+                            href="https://x.com/xianforge"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="p-3 text-white/40 hover:text-gold-500 transition-all hover:scale-110 active:scale-90"
+                        >
+                            <Twitter className="w-5 h-5" />
+                        </Link>
                         <Link
                             href="/login"
                             className="px-6 xl:px-10 py-3.5 glass-beveled text-[9px] xl:text-[10px] font-black tracking-[0.4em] uppercase rounded-sm hover:bg-gold-500 hover:text-black hover:border-gold-400 group/btn transition-all duration-700 flex flex-col items-center justify-center gap-0.5 active:scale-95 shadow-xl relative overflow-hidden min-w-[160px] xl:min-w-[190px]"
@@ -138,7 +148,14 @@ export default function Header() {
 
                 {/* Mobile Actions */}
                 <div className="flex lg:hidden items-center gap-3 md:gap-4">
-                    <ThemeToggle />
+                    <Link
+                        href="https://x.com/xianforge"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-3 text-white/40 hover:text-gold-500 transition-all active:scale-90"
+                    >
+                        <Twitter className="w-5 h-5 md:w-6 md:h-6" />
+                    </Link>
                     <button
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                         className="relative z-[110] p-3 text-white/40 hover:text-gold-500 transition-all active:scale-90"

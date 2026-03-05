@@ -47,7 +47,7 @@ export default function Mechanics() {
             <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-gold-500/20 to-transparent" />
             <div className="absolute -left-40 top-1/3 w-[500px] h-[500px] bg-crimson-500/[0.02] blur-[150px] rounded-full pointer-events-none animate-wobble" />
 
-            <div className="container mx-auto px-6 sm:px-10 md:px-20 relative z-10 flex flex-col gap-16 md:gap-24">
+            <div className="max-w-[1440px] mx-auto px-6 sm:px-10 md:px-16 lg:px-20 relative z-10 flex flex-col gap-16 md:gap-24">
                 <div className="flex flex-col items-center text-center gap-6 md:gap-10 max-w-4xl mx-auto">
                     <motion.div
                         initial={{ opacity: 0, y: -10 }}
@@ -75,7 +75,7 @@ export default function Mechanics() {
                 </div>
 
                 {/* Hand-Crafted Stage Cards - Asymmetrical */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 w-full max-w-7xl mx-auto">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 w-full">
                     {mechanics.map((item, index) => {
                         const rotations = [-1, 2, -1.5, 1];
                         return (

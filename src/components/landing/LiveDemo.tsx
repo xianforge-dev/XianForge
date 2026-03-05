@@ -56,7 +56,7 @@ export default function LiveDemo() {
             <div className="absolute top-0 right-0 w-1/2 h-full bg-gold-500/[0.04] blur-[150px] pointer-events-none animate-wobble" />
             <div className="absolute bottom-0 left-0 w-1/2 h-full bg-crimson-500/[0.03] blur-[150px] pointer-events-none animate-pulse-slow" />
 
-            <div className="container mx-auto px-6 sm:px-10 md:px-20 relative z-10 flex flex-col gap-16 md:gap-24">
+            <div className="max-w-[1440px] mx-auto px-6 sm:px-10 md:px-16 lg:px-20 relative z-10 flex flex-col gap-16 md:gap-24">
                 <div className="flex flex-col items-center text-center gap-6 md:gap-10 max-w-4xl mx-auto">
                     <motion.div
                         initial={{ opacity: 0, y: -10 }}
@@ -83,7 +83,7 @@ export default function LiveDemo() {
                     </p>
                 </div>
 
-                <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-20 items-stretch min-h-[600px] md:min-h-[700px]">
+                <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-20 items-stretch min-h-[600px] md:min-h-[700px]">
 
                     {/* Input Area - Artisanal Bevels */}
                     <motion.div

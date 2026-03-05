@@ -49,7 +49,7 @@ export default function Pricing() {
             <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-gold-500/10 to-transparent" />
             <div className="absolute -right-40 top-1/4 w-[500px] h-[500px] bg-gold-500/[0.02] blur-[150px] rounded-full pointer-events-none animate-wobble" />
 
-            <div className="container mx-auto px-6 sm:px-10 md:px-20 relative z-10 flex flex-col gap-16 md:gap-24">
+            <div className="max-w-[1440px] mx-auto px-6 sm:px-10 md:px-16 lg:px-20 relative z-10 flex flex-col gap-16 md:gap-24">
                 <div className="flex flex-col items-center text-center gap-6 md:gap-10 max-w-4xl mx-auto">
                     <motion.div
                         initial={{ opacity: 0, y: -10 }}
@@ -76,7 +76,8 @@ export default function Pricing() {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 max-w-[1200px] mx-auto items-stretch w-full">
+                {/* Expanded Pricing Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 items-stretch w-full">
                     {tiers.map((tier, index) => {
                         const rotations = [-1, 0.5, 1];
                         const lifts = [0, -20, 20];

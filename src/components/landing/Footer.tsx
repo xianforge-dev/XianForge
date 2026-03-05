@@ -20,7 +20,7 @@ export default function Footer() {
             <div className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-crimson-600/40 to-transparent shadow-[0_0_20px_rgba(220,20,60,0.3)]" />
             <div className="absolute top-1/2 left-1/4 w-[600px] h-[600px] bg-gold-500/[0.02] blur-[150px] rounded-full pointer-events-none animate-wobble" />
 
-            <div className="container mx-auto px-6 sm:px-10 md:px-20 relative z-10 flex flex-col items-center gap-12 md:gap-20">
+            <div className="max-w-[1440px] mx-auto px-6 sm:px-10 md:px-16 relative z-10 flex flex-col items-center gap-12 md:gap-20">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 sm:gap-16 mb-12 sm:mb-20 w-full text-center lg:text-left">
 
                     {/* Brand - High Depth Artisanal */}

@@ -78,10 +78,10 @@ export default function Hero() {
                         />
                     </motion.div>
 
-                    <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-background to-transparent z-10" />
-                    <div className="absolute inset-x-0 bottom-0 h-96 bg-gradient-to-t from-background via-background/80 to-transparent z-20" />
+                    <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-background via-background/40 to-transparent z-10" />
+                    <div className="absolute inset-x-0 bottom-0 h-[40vh] bg-gradient-to-t from-background via-background/90 to-transparent z-20" />
 
-                    <div className="container mx-auto px-10 md:px-20 lg:px-24 relative z-30 flex flex-col lg:flex-row items-center gap-20">
+                    <div className="max-w-[1440px] mx-auto px-6 sm:px-10 md:px-16 lg:px-20 relative z-30 flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
 
                         {/* Left Side: Asymmetrical Typographic Block */}
                         <motion.div
@@ -159,6 +159,18 @@ export default function Hero() {
                                 >
                                     CULTIVATOR ARCHIVE <ArrowRight className="w-4 h-4 group-hover:translate-x-2 transition-transform" />
                                 </a>
+
+                                {/* Orynth Featured Badge */}
+                                <motion.div
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 1 }}
+                                    transition={{ duration: 1, delay: 1.2 }}
+                                    className="w-full sm:w-auto flex justify-center sm:justify-start mt-6 lg:mt-0"
+                                >
+                                    <a href="https://orynth.dev/projects/xianforge" target="_blank" rel="noopener" className="hover:scale-105 transition-transform active:scale-95 grayscale-[0.5] hover:grayscale-0 opacity-60 hover:opacity-100">
+                                        <img src="https://orynth.dev/api/badge/xianforge?theme=dark&style=default" alt="Featured on Orynth" width="260" height="80" />
+                                    </a>
+                                </motion.div>
                             </motion.div>
                         </motion.div>
 
@@ -231,13 +243,14 @@ export default function Hero() {
 
                     </div>
                 </>
-            )}
+            )
+            }
 
             <style jsx>{`
                 .vertical-text {
                     writing-mode: vertical-rl;
                 }
             `}</style>
-        </section>
+        </section >
     );
 }
