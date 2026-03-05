@@ -51,8 +51,8 @@ export default function Header() {
             className={cn(
                 "fixed top-0 left-0 right-0 z-[100] transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] overflow-visible",
                 isScrolled
-                    ? "bg-black/80 backdrop-blur-3xl py-4 md:py-5 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.8)] border-b border-gold-500/10"
-                    : "bg-transparent py-7 md:py-10 border-b border-transparent"
+                    ? "bg-black/80 backdrop-blur-3xl py-3 md:py-4 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.8)] border-b border-gold-500/10"
+                    : "bg-transparent py-5 md:py-8 border-b border-transparent"
             )}
         >
             <nav className="max-w-[1440px] mx-auto flex items-center justify-between px-6 sm:px-10 lg:px-16">
@@ -133,7 +133,7 @@ export default function Header() {
                         </Link>
                         <Link
                             href="/login"
-                            className="px-6 xl:px-10 py-3.5 glass-beveled text-[9px] xl:text-[10px] font-black tracking-[0.4em] uppercase rounded-sm hover:bg-gold-500 hover:text-black hover:border-gold-400 group/btn transition-all duration-700 flex flex-col items-center justify-center gap-0.5 active:scale-95 shadow-xl relative overflow-hidden min-w-[160px] xl:min-w-[190px]"
+                            className="px-5 xl:px-8 py-3 glass-beveled text-[9px] xl:text-[10px] font-black tracking-[0.4em] uppercase rounded-sm hover:bg-gold-500 hover:text-black hover:border-gold-400 group/btn transition-all duration-700 flex flex-col items-center justify-center gap-0.5 active:scale-95 shadow-xl relative overflow-hidden min-w-[140px] xl:min-w-[170px]"
                         >
                             <span className="relative z-10 flex items-center gap-3">
                                 REFINE SPIRIT <ChevronRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />

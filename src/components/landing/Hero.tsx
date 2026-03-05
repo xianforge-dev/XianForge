@@ -60,7 +60,7 @@ export default function Hero() {
     return (
         <section
             ref={containerRef}
-            className="relative min-h-[110vh] flex items-center justify-center overflow-hidden pt-40 md:pt-64 pb-32"
+            className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 md:pt-40 pb-20"
         >
             {mounted && (
                 <>
@@ -168,7 +168,7 @@ export default function Hero() {
                                     className="w-full sm:w-auto flex justify-center sm:justify-start mt-6 lg:mt-0"
                                 >
                                     <a href="https://orynth.dev/projects/xianforge" target="_blank" rel="noopener" className="hover:scale-105 transition-transform active:scale-95 grayscale-[0.5] hover:grayscale-0 opacity-60 hover:opacity-100">
-                                        <img src="https://orynth.dev/api/badge/xianforge?theme=dark&style=default" alt="Featured on Orynth" width="260" height="80" />
+                                        <img src="https://orynth.dev/api/badge/xianforge?theme=dark&style=default" alt="Featured on Orynth" width="220" height="68" />
                                     </a>
                                 </motion.div>
                             </motion.div>
@@ -180,7 +180,7 @@ export default function Hero() {
                             animate={{ opacity: 1, scale: 0.9, rotate: 2 }}
                             transition={{ duration: 1.5, delay: 0.3 }}
                             whileHover={{ rotate: 1, scale: 0.92 }}
-                            className="relative aspect-[9/15] w-full max-w-[400px] mx-auto group lg:ml-20"
+                            className="relative aspect-[9/15] w-full max-w-[340px] mx-auto group lg:ml-20"
                         >
                             {/* Divine Ornamental Frame - Asymmetric */}
                             <div className="absolute -inset-8 border-l-[1px] border-r-[1px] border-gold-500/10 rounded-full opacity-30 pointer-events-none scale-x-[1.1] rotate-[-5deg]" />
